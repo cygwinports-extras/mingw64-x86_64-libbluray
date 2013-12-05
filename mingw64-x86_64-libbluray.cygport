@@ -1,0 +1,14 @@
+CROSS_HOST="x86_64-w64-mingw32"
+inherit cross
+
+NAME="mingw64-x86_64-libbluray"
+VERSION=0.2.2
+RELEASE=1
+CATEGORY="Devel"
+SUMMARY="Blu-Ray Disc playback library for Win64 toolchain"
+DESCRIPTION="libbluray is an open-source library designed for Blu-Ray Discs
+playback for media players, like VLC or MPlayer."
+HOMEPAGE="http://www.videolan.org/developers/libbluray.html"
+SRC_URI="ftp://ftp.videolan.org/pub/videolan/libbluray/${VERSION}/libbluray-${VERSION}.tar.bz2"
+SRC_DIR="libbluray-${VERSION}"
+PATCH_URI="0.2.2-no-undefined.patch"
